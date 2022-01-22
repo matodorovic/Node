@@ -8,14 +8,25 @@ function handleRequest(request, response) {
 
 const server = http.createServer((request, response) => {
   console.log(request.url);
+  response.statusCode = 200;
+
   if (request.url == "/hello") {
-    response.statusCode = 200;
-    response.write("Hello, world!");
-    response.end();
+      if (request.method == "GET") {
+        response.write("Hello, world!");
+      } else {
+          response.statusCode = 405;
+      }
   } else if (request.url == "/goodbye") {
-    response.statusCode = 200;
-    response.write("Goodbye, world!");
-    response.end();
+    if (request.method == "GET") {
+        response.write("Goodbye, world!");
+      } else {
+          response.statusCode = 405;
+      }
+    
+  } else {
+      response.statusCode = 404;
   }
+
+  response.end();
 });
 server.listen(5080);
