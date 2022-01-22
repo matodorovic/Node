@@ -1,0 +1,24 @@
+{
+  "name": "express-files",
+  "version": "1.0.0",
+  "description": "Express based web server for serving static files as an example",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:matodorovic/Node.git"
+  },
+  "author": "Marta Anna Todorovic <martaannatodorovic@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matodorovic/Node/issues"
+  },
+  "homepage": "https://github.com/matodorovic/Node#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
