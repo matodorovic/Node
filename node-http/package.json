@@ -1,0 +1,21 @@
+{
+  "name": "http-exemple",
+  "version": "1.0.0",
+  "description": "An example how to use HTTP in Node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matodorovic/Node.git"
+  },
+  "author": "Marta Anna Todorovic <martaannatodorovic@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matodorovic/Node/issues"
+  },
+  "homepage": "https://github.com/matodorovic/Node#readme"
+}
