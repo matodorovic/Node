@@ -24,7 +24,7 @@ app.get("/:fileName", async (request, response) => {
     response.send(fileBuf);
 });
 */
-
+/*
 app.get("/*", async (request, response) => {
     const fileName = request.path;
     const fileBuf = await fs.readFile(`./files/${fileName}`);
@@ -32,5 +32,8 @@ app.get("/*", async (request, response) => {
     response.type(type);
     response.send(fileBuf);
 });
+*/
+
+app.use(express.static("./files"));
 
 app.listen(5080);
