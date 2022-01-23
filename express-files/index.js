@@ -8,6 +8,25 @@ app.get("/", async (request, response) => {
     response.type("html");
     response.send(fileBuf);
 });
+
+app.get("/:name", async (request, response) => {
+    const name = request.params.name;
+    const fileBuf = await fs.readFile("./files/index.html");
+    const content = fileBuf.toString().replace("Marta", name);
+    response.type("html");
+    response.send(content);
+});
+
+ /* Querystring name */ /*
+app.get("/hello", async (request, response) => {
+    const name = request.query.name;
+    const fileBuf = await fs.readFile("./files/index.html");
+    const content = fileBuf.toString().replace("Marta", name);
+    response.type("html");
+    response.send(content);
+});
+*/
+
 /*
 app.get("/main.css", async (request, response) => {
     const fileBuf = await fs.readFile("./files/main.css");
