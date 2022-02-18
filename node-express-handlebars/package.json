@@ -1,7 +1,7 @@
 {
-  "name": "node-handlebars",
+  "name": "node-express-handlebars",
   "version": "1.0.0",
-  "description": "Simple handlebars example",
+  "description": "Simple express handlebars example",
   "main": "index.js",
   "type": "module",
   "scripts": {
